@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Include="Products\Color.fs" />
+      <Compile Include="Products\Size.fs" />
+      <Compile Include="Products\Product.fs" />
+      <Compile Include="Specifications\ISpecification.fs" />
+      <Compile Include="Specifications\AndSpecification.fs" />
+      <Compile Include="Specifications\ColorSpecification.fs" />
+      <Compile Include="Specifications\SizeSpecification.fs" />
+    </ItemGroup>
+
+    <ItemGroup />
+
+    <ItemGroup>
+      <Compile Include="Filters\IFilter.fs" />
+      <Compile Include="Filters\ProductFilter.fs" />
+      <Compile Include="Filters\BetterFilter.fs" />
+      <Compile Include="Program.fs" />
+    </ItemGroup>
+
+</Project>

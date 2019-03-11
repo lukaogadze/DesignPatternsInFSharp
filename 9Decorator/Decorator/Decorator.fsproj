@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="MultipleInheritance\IBird.fs" />
+    <Compile Include="MultipleInheritance\Bird.fs" />
+    <Compile Include="MultipleInheritance\ILizard.fs" />
+    <Compile Include="MultipleInheritance\Lizard.fs" />
+    <Compile Include="MultipleInheritance\Dragon.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="DynamicDecoratorComposition\IShape.fs" />
+    <Compile Include="DynamicDecoratorComposition\Circle.fs" />
+    <Compile Include="DynamicDecoratorComposition\Square.fs" />
+    <Compile Include="DynamicDecoratorComposition\ColoredShape.fs" />
+    <Compile Include="DynamicDecoratorComposition\TransparentShape.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="StaticDecoratorComposition\Shape.fs" />
+    <Compile Include="StaticDecoratorComposition\Circle.fs" />
+    <Compile Include="StaticDecoratorComposition\Square.fs" />
+    <Compile Include="StaticDecoratorComposition\GenericColoredShape.fs" />
+    <Compile Include="StaticDecoratorComposition\TransparentShape.fs" />
+    <Compile Include="MyStringBuilder.fs" />
+    <Compile Include="CodeBuilder.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Document.fs" />
+    <Compile Include="IScanner.fs" />
+    <Compile Include="IPrinter.fs" />
+    <Compile Include="IMachine.fs" />
+    <Compile Include="IMultiFunctionDevice.fs" />
+    <Compile Include="MultiFunctionPrinter.fs" />
+    <Compile Include="OldFashionedPrinter.fs" />
+    <Compile Include="MultiFunctionMachine.fs" />
+    <Compile Include="PhotoCopier.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>

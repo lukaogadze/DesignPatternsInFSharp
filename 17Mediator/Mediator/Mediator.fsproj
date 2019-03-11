@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="EventBroker\PlayerEvent.fs" />
+    <Compile Include="EventBroker\PlayerSentOffEvent.fs" />
+    <Compile Include="EventBroker\PlayerScoredEvent.fs" />
+    <Compile Include="EventBroker\EventBroker.fs" />
+    <Compile Include="EventBroker\Actor.fs" />
+    <Compile Include="EventBroker\FootballCoach.fs" />
+    <Compile Include="EventBroker\FootballPlayer.fs" />
+    <Compile Include="IChatRoom.fs" />
+    <Compile Include="IPerson.fs" />
+    <Compile Include="ChatRoom.fs" />
+    <Compile Include="Person.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.1" />
+    <PackageReference Include="System.Reactive" Version="4.1.3" />
+  </ItemGroup>
+
+</Project>

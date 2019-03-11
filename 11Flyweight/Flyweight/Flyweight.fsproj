@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="JetBrains.dotMemoryUnit" Version="3.0.20171219.105559" />
+        <PackageReference Include="nunit" Version="3.10.1" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="TextFormatter\FormattedText.fs" />
+      <Compile Include="TextFormatter\TextRange.fs" />
+      <Compile Include="TextFormatter\BetterFormattedText.fs" />
+      <Compile Include="OptimizedUser.fs" />
+      <Compile Include="User.fs" />
+      <Compile Include="PerformanceTests.fs" />
+      <Compile Include="Program.fs" />
+    </ItemGroup>
+
+</Project>

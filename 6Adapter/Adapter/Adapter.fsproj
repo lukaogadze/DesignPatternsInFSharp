@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Point.fs" />
+    <Compile Include="Line.fs" />
+    <Compile Include="VectorObject.fs" />
+    <Compile Include="VectorRectangle.fs" />
+    <Compile Include="LineToPointAdapter.fs" />
+    <Compile Include="Demo.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>

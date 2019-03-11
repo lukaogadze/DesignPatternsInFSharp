@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <WarningLevel>4</WarningLevel>
+      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="IListStrategy.fs" />
+        <Compile Include="HtmlListStrategy.fs" />
+        <Compile Include="MarkdownListStrategy.fs" />
+        <Compile Include="TextProcessor.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+</Project>

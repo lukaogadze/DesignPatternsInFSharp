@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Relationship.fs" />
+    <Compile Include="Person.fs" />
+    <Compile Include="IRelationshipBrowser.fs" />
+    <Compile Include="RelationShips.fs" />
+    <Compile Include="Research.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>

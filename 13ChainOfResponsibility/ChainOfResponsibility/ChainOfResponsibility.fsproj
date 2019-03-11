@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Creature.fs" />
+    <Compile Include="CreatureModifier.fs" />
+    <Compile Include="DoubleAttackModifier.fs" />
+    <Compile Include="NoBonusModifier.fs" />
+    <Compile Include="IncreasingDefenceModifier.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="BrokerChains\Argument.fs" />
+    <Compile Include="BrokerChains\Query.fs" />
+    <Compile Include="BrokerChains\Game.fs" />
+    <Compile Include="BrokerChains\Creature.fs" />
+    <Compile Include="BrokerChains\CreatureModifier.fs" />
+    <Compile Include="BrokerChains\DoubleAttackModifier.fs" />
+    <Compile Include="BrokerChains\IncreaseDefenceModifier.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>

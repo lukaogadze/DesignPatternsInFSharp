@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Include="PropertyProxy\Property.fs" />
+      <Compile Include="PropertyProxy\Creature.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="ProtectionProxy\ICar.fs" />
+      <Compile Include="ProtectionProxy\Car.fs" />
+      <Compile Include="ProtectionProxy\Driver.fs" />
+      <Compile Include="ProtectionProxy\CarProxy.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="DynamicProxy\IBankAccount.fs" />
+      <Compile Include="DynamicProxy\BanckAccount.fs" />
+      <Compile Include="DynamicProxy\Log.fs" />
+      <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="ImpromptuInterface" Version="7.0.1" />
+    </ItemGroup>
+
+</Project>

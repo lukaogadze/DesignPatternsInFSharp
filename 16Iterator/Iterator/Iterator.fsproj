@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="ArrayBackedProperties\Creature.fs" />
+    <Compile Include="Node.fs" />
+    <Compile Include="InOrderIterator.fs" />
+    <Compile Include="BinaryTree.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="IExpression.fs" />
+        <Compile Include="IAdditionExpression.fs" />
+        <Compile Include="IDoubleExpression.fs" />
+        <Compile Include="IExpressionVisitor.fs" />
+        <Compile Include="Expression.fs" />
+        <Compile Include="DoubleExpression.fs" />
+        <Compile Include="AdditionExpression.fs" />
+        <Compile Include="ExpressionPrinter.fs" />
+        <Compile Include="ExpressionCalculator.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+</Project>

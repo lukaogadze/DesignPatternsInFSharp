@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="PersonBuilder\Person.fs" />
+    <Compile Include="PersonBuilder\PersonJobBuilder.fs" />
+    <Compile Include="PersonBuilder\PersonAddressBuilder.fs" />
+    <Compile Include="PersonBuilder\PersonBuilder.fs" />
+    <Compile Include="HtmlElement.fs" />
+    <Compile Include="HtmlBuilder.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>

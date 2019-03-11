@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="BankAccount.fs" />
+    <Compile Include="Commands\ICommand.fs" />
+    <Compile Include="Commands\BankCommandActions.fs" />
+    <Compile Include="Commands\BankAccountCommand.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>
