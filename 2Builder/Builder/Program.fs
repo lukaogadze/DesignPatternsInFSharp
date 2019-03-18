@@ -1,8 +1,6 @@
 ﻿module Builder.Program
 
-open Builder.PersonBuilder
-
-open System
+open Builder.FacetedBuilder
 open System.Text
 
 let private stringBuilderExample() =
@@ -31,18 +29,20 @@ let private htmlElementBuilderExample() =
     printfn "%A" builder
 
 let private personBuilderExample() =
-    let builder = PersonBuilder(Person())
-    let person = builder.Lives
-                        .At("123 London Road")
-                        .In("London")
-                        .WithPostCode("SW12CA")
-                                .Works
-                                .At("Fabrikam")
-                                .As("Engineer")
-                                .Earning(2002313)
-                                    .Build()                                    
-
-    printfn "%A" person
+    let pb = PersonBuilder()
+    let person = pb
+                    .Lives
+                    .At("123 London Road")
+                    .In("London")
+                    .WithPostcode("SW12A")
+                        .Works
+                        .At("Fabrikam")
+                        .AsA("Engineer")
+                        .Earning(123000)
+                            .Build()
+                            
+    printfn "%A" person                            
+                               
 
     
         
@@ -55,15 +55,6 @@ let private personBuilderExample() =
 
 [<EntryPoint>]
 let main argv =  
+    // htmlElementBuilderExample()
     personBuilderExample()
     0
-
-
-    //let person = pb.Lives
-    //    .At("123 London Road")
-    //    .In("London")
-    //    .WithPostCode("SW12CA")
-    //        .Works
-    //        .At("Fabrikam")
-    //        .As("Engineer")
-    //        .Earning(123000)

@@ -6,10 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="PersonBuilder\Person.fs" />
-    <Compile Include="PersonBuilder\PersonJobBuilder.fs" />
-    <Compile Include="PersonBuilder\PersonAddressBuilder.fs" />
-    <Compile Include="PersonBuilder\PersonBuilder.fs" />
+    <Compile Include="FacetedBuilder\Person.fs" />
+    <Compile Include="FacetedBuilder\PersonBuilder.fs" />
     <Compile Include="HtmlElement.fs" />
     <Compile Include="HtmlBuilder.fs" />
     <Compile Include="Program.fs" />
